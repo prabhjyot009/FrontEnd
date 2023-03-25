@@ -1,0 +1,10 @@
+ol{
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+}
+li{
+    padding: 10px;
+}
+td{
+    border-style: solid;
+}

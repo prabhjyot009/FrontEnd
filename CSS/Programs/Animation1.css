@@ -1,0 +1,17 @@
+@keyframes example{
+    0%{background-color: rgb(red, green, blue);}
+    25%{background-color: rgb(red, green, blue);}
+    50%{background-color: rgb(red, green, blue);}
+    75%{background-color: rgb(red, green, blue);}
+    100%{background-color: rgb(red, green, blue);}
+}
+
+.grad{
+    width:100px;
+    height:100px;
+    position: relative;
+    background-color: red;
+    animation-name:example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+}

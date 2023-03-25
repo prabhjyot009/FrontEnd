@@ -1,0 +1,44 @@
+/*These styles are for index.html, rest pages have styles on the same page*/
+body {
+  margin:0px;
+  background-image: url("images/bg2.jpg");
+  background-size: cover;
+}
+img{
+  width: 80%;
+  height: 80%;
+  opacity: 0.5;
+
+}
+a:link {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #e7e7e7;
+  border-bottom: solid 4px #FFA000;
+  border-radius: 15px 15px 0 0;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  z-index: 2; 
+  width: 20%;
+  left: 15%;
+  top: -50px;
+  opacity: 0.9;
+  font-weight: bold;
+  background-color: rgb(255, 68, 0);
+  }
+  a:hover{
+    background-color: transparent;
+  }
+.wrapper
+{position: relative;}
+.main-img{
+    margin-left: 15%;
+}
+a{
+  color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+ 
+
+ 

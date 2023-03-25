@@ -1,0 +1,11 @@
+button{
+    background-color: aquamarine;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor:not-allowed;
+    width:50%;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}

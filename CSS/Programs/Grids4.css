@@ -1,0 +1,11 @@
+.grid-container{
+    display:inline-grid;
+    grid-template-columns:repeat(3,1fr)/*auto auto auto fr:Fraction*/
+   /* row-gap: 40px;
+    column-gap: 50px;*/
+    gap: 50px 100px;
+}
+
+.grid-item{
+    border: solid;
+}

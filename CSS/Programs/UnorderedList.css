@@ -1,0 +1,10 @@
+ul{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+li{
+    padding: 10px;
+}
+td{
+    border-style: solid;
+}

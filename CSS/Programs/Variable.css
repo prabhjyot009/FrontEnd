@@ -1,0 +1,8 @@
+:root{
+    --main-bg-color:red;
+}
+.grad{
+    height:50px;
+    width:50px;
+    background-color: var(--main-bg-color);
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contact us</title>
+        <style>
+          
+body {
+  background-image: url("images/back.jpg");}
+form { max-width:420px; margin:100px; }
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border:1px solid #0c0000;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  background-color: transparent;
+}
+
+.feedback-input:focus { border:2px solid #db351c; }
+
+textarea 
+{
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+  background-color: transparent;
+}
+
+[type="submit"] 
+{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: transparent;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:rgb(0, 2, 5);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-top:-4px;
+  font-weight:700;
+  border-style: solid;
+  border-width: 1px;
+}
+[type="submit"]:hover { background-color:orangered; }
+</style>
+    </head>
+    <body>
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
+    </body>
+</html>

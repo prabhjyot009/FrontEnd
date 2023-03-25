@@ -1,0 +1,15 @@
+button {
+    background-color: blue;
+
+}
+
+.primary {
+    background-color: brown;
+}
+
+p {
+    background-color: blueviolet;
+}
+a[href] {
+    background-color: red;
+}
