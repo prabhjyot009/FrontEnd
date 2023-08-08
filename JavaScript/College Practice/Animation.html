@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+            <style>
+                #box{
+                    color: black;
+                    height: 100px;
+                    width: 100px;
+                    background-color: red;
+                    transition: 2s ease all;
+                }
+            </style>
+            <div id="box">BOX</div><br>
+            <button id="btn">Click me!</button>
+    </head>
+    <body>
+        <script>
+            var btn=document.getElementById("btn");
+            var box=document.getElementById("box");
+
+            btn.onclick=function(){
+                box.style.transform="translateX(200px)";
+            }
+            box.onclick=function(){
+                box.style.transform +="scale(2)";
+            }
+        </script>
+    </body>
+</html>

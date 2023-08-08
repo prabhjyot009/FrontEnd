@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="container">
+            <p id="element1">a</p>
+            <p id="element2">b</p>
+            <p id="element3">c</p>
+
+        </div>
+        <script>
+            var a=document.createElement("a");
+            a.href="facebook.com";
+            a.textContent="Facebook";
+
+            // document.getElementById("container").appendChild(a);
+
+            var element2=document.getElementById("element2");
+            document.getElementById("container").insertBefore(a,element2);
+            a.remove();
+            //to removee child:
+            document.getElementById("container").removeChild(element2);
+        </script>
+    </body>
+</html>

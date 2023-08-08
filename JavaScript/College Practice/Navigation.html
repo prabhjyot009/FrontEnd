@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div id="container">
+            First
+            <ul id="linkbox">
+                <li class="link">Link1</li>
+                <li class="link">Link2</li>
+                <li class="link">Link3</li>
+            </ul>
+            Last
+        </div>
+        <script>
+            var
+             linkbox=document.getElementById("linkbox");
+            // document.write(linkbox.parentNode.childNodes[0]);
+            // document.write(linkbox.parentNode.firstChild.nodeValue);
+            // document.write(linkbox.parentNode.lastChild.nodeValue);
+            var link1=document.getElementsByClassName("link")[1];
+            // document.write(link1.previousSibling.previousSibling);
+            // document.write(link1.nextSibling.nextSibling.textContent);
+            document.write(link1.nextSibling.nextSibling.nodeName);
+
+        </script>
+    </body>
+</html>

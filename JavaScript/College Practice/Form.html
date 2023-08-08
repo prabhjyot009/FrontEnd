@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <form action="#" method="post">
+            <h2>Form using DOM</h2>
+            <input type="email" id="email" placeholder="email"><br><br>
+            <input type="password" id="password" placeholder="password"><br><br>
+            <input type="number" id="age" placeholder="Age"><br><br>
+            <input type="submit" id="submit" placeholder="submit">
+        </form>
+    </head>
+    <body>
+        <script>
+            var email=document.getElementById("email");
+            var password=document.getElementById("password");
+            var age=document.getElementById("age");
+            var submit = document.getElementById("submit");
+            submit.onclick=function(){
+                if(email.value!="" && password.value!="")
+                document.write("Success");
+            if(age.value >=18 && age.value <=40){
+                document.write("Verified");
+            }
+            }
+        </script>
+    </body>
+</html>
