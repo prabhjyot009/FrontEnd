@@ -17,7 +17,7 @@ body{
     font-size: 18px;
 
 }
-
+/**/
 .app{
     display: grid;
     grid-template-columns: repeat(auto-fill,300px);
