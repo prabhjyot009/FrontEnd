@@ -12,16 +12,17 @@
         <h1 class="heading">Temprature Converter</h1>
         <div class="temp-container">
             <label for="celsius">Celsius</label>
-            <input type="number" name="celsius" id="celsius" placeholder="Enter Temprature" class="input">
+            <input onchange="computeTemp(event)" type="number" name="celsius" id="celsius" placeholder="Enter Temprature" class="input">
         </div>
         <div class="temp-container">
             <label for="fahrenheit">fahrenheit</label>
-            <input type="number" name="fahrenheit" id="fahrenheit" placeholder="Enter Temprature" class="input">
+            <input onchange="computeTemp(event)" type="number" name="fahrenheit" id="fahrenheit" placeholder="Enter Temprature" class="input">
         </div>
         <div class="temp-container">
-            <label for="Kelvin">Kelvin</label>
-            <input type="number" name="Kelvin" id="Kelvin" placeholder="Enter Temprature" class="input">
+            <label for="kelvin">Kelvin</label>
+            <input onchange="computeTemp(event)" type="number" name="kelvin" id="kelvin" placeholder="Enter Temprature" class="input">
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
