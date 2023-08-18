@@ -1,7 +1,7 @@
 //in innerHTML we are allow to do html scripting
 //where as innerTEXT only outputs it as text format
 
-const btn = document.querySelector("button");
+const btn = document.getElementById("button");
 const output= document.querySelector(".output");
 console.log(btn);
 btn.addEventListener("click", function () {
