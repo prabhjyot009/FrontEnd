@@ -20,14 +20,44 @@
         <dd>- White cold drink</dd>
     </dl>
     <!--Unordered list-->
-    <ul type="square">
+    <!-- <ul type="square">
         <li>Home</li>
         <li>Course
-        <ul>
+        <ul style="list-style-type: disc;">
             <li>UG Course</li>
             <li>PG Course</li>
         </li>
         </ul>
+    </ul><br><br> -->
+
+    <!--Horizontal list-->
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: bisque;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: wheat;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: blueviolet;
+        }
+    </style>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
     </ul>
 </body>
 </html>
