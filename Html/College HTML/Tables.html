@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <table>
         <tr>
@@ -23,13 +25,13 @@
             <td>3</td>
         </tr>
     </table>
-    <table border="3">
+    <table border="3" cellpadding="6" cellspacing="5">
         <tr>
             <th>Student name</th>
             <th>Course</th>
             <th>Semester</th>
         </tr>
-        
+
         <tr>
             <td>Abhi</td>
             <td>BCA</td>
@@ -46,5 +48,32 @@
             <td>VI</td>
         </tr>
     </table>
+    <!-- ColSpan -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Mobile No.</th>
+        </tr>
+        <tr>
+            <td>Sonu</td>
+            <td>93293931</td>
+            <td>87387317</td>
+        </tr>
+    </table>
+    <!-- RowSpan -->
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>Singh</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile No.</th>
+            <td>93293931</td>
+        </tr>
+        <tr>
+            <td>87387317</td>
+        </tr>
+    </table>
 </body>
+
 </html>
