@@ -19,10 +19,33 @@
         div.b{
             word-wrap:break-word;
         }
+        p.c::first-letter{
+            font-size: 50px;
+            color: red;
+            /* capitalise */
+            text-transform: capitalize;
+        }
+
         #sp:hover{
             color: red;
         }
-        
+
+        p.c::selection{
+            color: red;
+        }
+        p.c::after{
+            content: "*********************************";             
+            display: block;             
+        }
+        p.d{
+            width: 200px;
+            word-wrap: break-word;
+        }
+        p.d::first-line{
+            color: red;
+            /* capitalise */
+            text-transform: capitalize;
+        }
     </style>
 </head>
 
@@ -30,9 +53,13 @@
     <p class="a">Hello 
         Sir!!</p>
     <div class="b">
-        HEllllllllllllllllllllllllllllllllll
+        Hellllllllllllllllllllllllllllllllll
     </div>
-    <p class="c">He<span id="sp">l</span>llo</p>
+    <p class="c">he<span id="sp">l</span>llo</p>
+    <p class="d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, nam ea. 
+        Repudiandae voluptatum laboriosam corrupti atque dolore praesentium assumenda nam rerum, 
+        veniam ipsa esse ea possimus deserunt molestiae eaque debitis!
+    </p>
 </body>
 
 </html>
