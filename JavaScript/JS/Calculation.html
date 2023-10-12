@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link  type="text/css" rel="stylesheet" href="Calculation.js">
     <style>
 
         input{
@@ -21,13 +20,14 @@
 </head>
 <body>
     <form>
-        <label for="">Num1: </label>
-        <input type="text" name="" id="firstNumber"/><br>
-        <label for="">Num2: </label>
-        <input type="text" name="" id="secondNumber"/><br>
-        <input type="button" onclick="multiplyBy()" value="Multiply"/>
-        <input type="button" onclick="divideBy()" value="Divide"/>
+        <label >Num1: </label>
+        <input type="text" id="firstNumber"/><br>
+        <label>Num2: </label>
+        <input type="text"  id="secondNumber"/><br>
+        <input type="button" onClick="multiplyBy()" value="Multiply"/>
+        <input type="button" onClick="divideBy()" value="Divide"/>
     </form>
     <p>The Result is: <span id="result"></span></p>
+    <script src="Calculation.js"></script>    
 </body>
 </html>
