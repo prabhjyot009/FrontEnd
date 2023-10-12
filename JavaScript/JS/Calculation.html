@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        
-    </script>
+    <link  type="text/css" rel="stylesheet" href="Calculation.js">
+    <style>
+
+        input{
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        #result{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
     <form>
         <label for="">Num1: </label>
-        <input type="text" name="" id="firstNumber"><br>
+        <input type="text" name="" id="firstNumber"/><br>
         <label for="">Num2: </label>
-        <input type="text" name="" id="secondNumber"><br>
-        <input type="button" onClick="multiplyBy()" value="Multiply">
-        <input type="button" onClick="divideBy()" value="Divide">
+        <input type="text" name="" id="secondNumber"/><br>
+        <input type="button" onclick="multiplyBy()" value="Multiply"/>
+        <input type="button" onclick="divideBy()" value="Divide"/>
     </form>
     <p>The Result is: <span id="result"></span></p>
 </body>
