@@ -4,19 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- email validate html code: -->
     <input type="text" id="email">
     <input type="button" value="Validate" onclick="validate()">
 </head>
 <body>
-    <!-- validate email using logic -->
     <script>
         function validate(){
             var email = document.getElementById("email").value;
             var flag = 0;
             for(var i=0;i<email.length;i++){
-                if(email[i]=='@' && email[i+1]=='g' && email[i+2]=='m' && email[i+3]=='a' && email[i+4]=='i' && email[i+5]=='l' && email[i+6]=='.' && email[i+7]=='c' && email[i+8]=='o' && email[i+9]=='m'){
+                if(email[i]=='@' && email[email.length-4]=='.'){
                     flag = 1;
                     break;
                 }

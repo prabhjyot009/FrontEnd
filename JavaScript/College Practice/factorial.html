@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <input type="button" value="Factorial" onclick="factorial()">
+    <input type="button" value="fibonacci" onclick="fibonacci()">
+
+</head>
+<body>
+    <script>
+        function factorial(){
+            var n = prompt("Enter a number");
+            var fact = 1;
+            for(let i=1;i<=n;i++){
+                fact = fact*i;
+            }
+            alert(fact);
+        }
+        function fibonacci(){
+            var n = prompt("Enter a number");
+            var a=0;
+            var b=1;
+            var c= a+b;
+            for(let i=1;i<=n;i++){
+                c=a+b;
+                a=b;
+                b=c;
+                alert(c);
+            }
+        }
+    </script>
+</body>
+</html>

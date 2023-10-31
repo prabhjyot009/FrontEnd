@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <form name="myForm" onsubmit="return validate">
+        Username: <input type="text" name="username"><br><br>
+        Password: <input type="password" name="password"><br><br>
+        Email: <input type="text" id="email"><br><br>
+        <hr>
+        <input type="checkbox" name="gender" value="male">Male<br>
+        <input type="checkbox" name="gender" value="female">Female<br>
+        <input type="checkbox" name="gender" value="other">Other<br><br>
+        <hr>    
+        <input type="radio" name="r1" value="r1">Yes<br>
+        <input type="radio" name="r2" value="r2">No<br>
+        <br><hr>
+        <input type="submit" value="Submit" onclick="validate()">
+    </form>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        function validate(){
+            var email = document.getElementById("email").value;
+            var flag = 0;
+            for(var i=0;i<email.length;i++){
+                if(email[i]=='@' && email[i+1]=='g' && email[i+2]=='m' && email[i+3]=='a' && email[i+4]=='i' && email[i+5]=='l' && email[i+6]=='.' && email[i+7]=='c' && email[i+8]=='o' && email[i+9]=='m'){
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag==1){
+                alert("Valid Email");
+            }
+            else{
+                alert("Invalid Email");
+            }
+            var username = document.forms["myForm"]["username"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var male = document.forms["myForm"]["male"].value;
+            var female = document.forms["myForm"]["female"].value;
+            var other = document.forms["myForm"]["other"].value;
+            var r1 = document.forms["myForm"]["r1"].value;
+            var r2 = document.forms["myForm"]["r2"].value;
+            if(username=="" || password=="" || male=="" || female=="" || other=="" || r1=="" || r2==""){
+                alert("Please fill all the fields");
+                return false;
+            }
+            if(password.length<5){
+                alert("password length should be greater than 5");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
