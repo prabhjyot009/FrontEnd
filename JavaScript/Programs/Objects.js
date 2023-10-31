@@ -8,6 +8,9 @@ class Person
     //methods
     print(){
         console.log(this.firstname +"," +this.lastname);
+        document.write(this.firstname +"," +this.lastname);
+        confirm(this.firstname +"," +this.lastname);
+        alert(this.firstname +"," +this.lastname);
     }
 }
 

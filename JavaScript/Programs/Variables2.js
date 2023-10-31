@@ -6,7 +6,7 @@ function mFunction()
      let a=3.4;
      let b=1.2;
 
-     console.log(a/b2);
+     console.log(a/b);
 }
 {
     var a=2;
