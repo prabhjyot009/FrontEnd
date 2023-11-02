@@ -79,12 +79,11 @@
         .buttons {
             margin-left: 90px;
         }
-        #submit{
-            background-color: green;
+        .sub{
+            background-color: red;
         }
-        #reset{
-            background-color: red
-            ;
+        .res{
+            background-color: green;
         }
     </style>
 </head>
@@ -93,7 +92,7 @@
     <div class="container">
         <h1>Form Validation</h1>
         <fieldset class="form">
-            <form name="myForm" onsubmit="return validate()">
+            <form name="myForm">
                 <label>Username:</label>
                 <input type="text" name="username" id="username" placeholder="Enter your Username">
                 <br>
@@ -127,8 +126,8 @@
                 <input class="radioJS" type="radio" name="language">
                 <br><br>
                 <div class="buttons">
-                    <input id="submit" type="button" value="Submit" onclick="validate()">
-                    <input id="reset" type="button" value="Reset" onclick="reset()">
+                    <input class="sub"  type="button" value="Submit" onclick="validate()">
+                    <input class="res" type="button" value="Reset" onclick="reset()">
                 </div>
             </form>
         </fieldset>
@@ -174,7 +173,6 @@
 
         function reset() {
             document.getElementById("username").value = "";
-            document.getElementById("password").value = "";
         }
     </script>
 </body>
