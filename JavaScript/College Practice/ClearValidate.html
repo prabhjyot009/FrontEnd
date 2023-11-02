@@ -1,73 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
-    body{
-        margin-top: 250px;
-        background: darkgray;
-    }
-        .container{
+    <style>
+        body {
+            margin-top: 250px;
+            background: darkgray;
+        }
+
+        .container {
             width: 350px;
             margin: 0 auto;
             border: 1px solid black;
             padding: 10px;
             background-image: linear-gradient(red, yellow);
         }
-        .form{
+
+        .form {
             border: 1px solid black;
             padding: 10px;
         }
-        input{
+
+        input {
             padding: 5px;
             margin: 5px;
         }
-        label{
+
+        label {
             padding: 5px;
             margin: 5px;
         }
-        .gender{
+
+        .gender {
             padding: 50px;
             margin: 5px;
-            font-family:cursive;
+            font-family: cursive;
             font-size: small;
         }
-        .genderinputM{
+
+        .genderinputM {
             margin-left: 23px;
         }
-        .genderinputF{
+
+        .genderinputF {
             margin-left: 10px;
         }
-        .genderinputO{
+
+        .genderinputO {
             margin-left: 15px;
         }
-        .language{
+
+        .language {
             padding: 50px;
             margin: 5px;
-            font-family:cursive;
+            font-family: cursive;
             font-size: small;
         }
-        .radioJ{
+
+        .radioJ {
             margin-left: 39px;
         }
-        .radioC{
+
+        .radioC {
             margin-left: 47px;
         }
-        .radioJS{
+
+        .radioJS {
             margin-left: 1px;
         }
-        .buttons{
+
+        .buttons {
             margin-left: 100px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-    <h1>Form Validation</h1>
-    <fieldset class="form">
-        <form name="myForm">
+        <h1>Form Validation</h1>
+        <fieldset class="form">
+            <form name="myForm" onsubmit="return validate()">
                 <label>Username:</label>
                 <input type="text" name="username" id="username" placeholder="Enter your Username">
                 <br>
@@ -75,7 +90,7 @@
                 <input type="password" name="password" id="password" placeholder="Enter your Password">
                 <br><br>
                 <label>Enter your gender:</label><br>
-                <label class="gender">Male</label>                
+                <label class="gender">Male</label>
                 <input class="genderinputM" type="checkbox" name="gender" id="male"><br>
                 <label class="gender">Female</label>
                 <input class="genderinputF" type="checkbox" name="gender" id="female"><br>
@@ -104,12 +119,54 @@
                     <input type="button" value="Submit" onclick="validate()">
                     <input type="button" value="Reset" onclick="reset()">
                 </div>
-        </form>
-    </fieldset>
-</div>
+            </form>
+        </fieldset>
+    </div>
 
-<script>
-    
-</script>
+    <script>
+        function validate() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            // var gender=document.getElementsByName("gender");
+            var gender = document.myForm.gender;
+            if (username == "") {
+                alert("Please enter your username");
+                return false;
+            }
+            if (password == "") {
+                alert("Please enter your password");
+                return false;
+            }
+            if (password.length < 5) {
+                alert("Please enter a password of length greater than 5");
+                return false;
+            }
+            var flag = false;
+            for (let i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    flag = true;
+                    break;
+                }
+                if (!flag) {
+                    alert("Please select")
+                    return false;
+                }
+            }
+            var flag2 = false;
+            if (document.myForm.language[0].checked == false && document.myForm.language[1].checked == false && document.myForm.language[2].checked == false) {
+                alert("Please select a language");
+                return false;
+            }
+
+            alert("Form submitted successfully");
+            return true;
+        }
+
+        function reset() {
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
+        }
+    </script>
 </body>
+
 </html>
