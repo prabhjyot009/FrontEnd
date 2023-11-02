@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body{
+        margin-top: 250px;
+        background: darkgray;
+    }
+        .container{
+            width: 350px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 10px;
+            background-image: linear-gradient(red, yellow);
+        }
+        .form{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+        label{
+            padding: 5px;
+            margin: 5px;
+        }
+        .gender{
+            padding: 50px;
+            margin: 5px;
+            font-family:cursive;
+            font-size: small;
+        }
+        .genderinputM{
+            margin-left: 23px;
+        }
+        .genderinputF{
+            margin-left: 10px;
+        }
+        .genderinputO{
+            margin-left: 15px;
+        }
+        .language{
+            padding: 50px;
+            margin: 5px;
+            font-family:cursive;
+            font-size: small;
+        }
+        .radioJ{
+            margin-left: 39px;
+        }
+        .radioC{
+            margin-left: 47px;
+        }
+        .radioJS{
+            margin-left: 1px;
+        }
+        .buttons{
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Form Validation</h1>
+    <fieldset class="form">
+        <form name="myForm">
+                <label>Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter your Username">
+                <br>
+                <label>Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter your Password">
+                <br><br>
+                <label>Enter your gender:</label><br>
+                <label class="gender">Male</label>                
+                <input class="genderinputM" type="checkbox" name="gender" id="male"><br>
+                <label class="gender">Female</label>
+                <input class="genderinputF" type="checkbox" name="gender" id="female"><br>
+                <label class="gender">Other</label>
+                <input class="genderinputO" type="checkbox" name="gender" id="other">
+                <br><br>
+                <label id="course">Select your course:</label>
+                <select name="course" id="course">
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="B.A">B.A</option>
+                </select><br><br>
+                <label name="radio">Choose language:</label>
+                <br>
+                <label class="language">Java</label>
+                <input class="radioJ" type="radio" name="language">
+                <br>
+                <label class="language">C++</label>
+                <input class="radioC" type="radio" name="language">
+                <br>
+                <label class="language">JavaScript</label>
+                <input class="radioJS" type="radio" name="language">
+                <br><br>
+                <div class="buttons">
+                    <input type="button" value="Submit" onclick="validate()">
+                    <input type="button" value="Reset" onclick="reset()">
+                </div>
+        </form>
+    </fieldset>
+</div>
+
+<script>
+    
+</script>
+</body>
+</html>

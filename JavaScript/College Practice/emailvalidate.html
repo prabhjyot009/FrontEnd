@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <input type="text" id="email">
-    <input type="button" value="Validate" onclick="validate()">
 </head>
 <body>
+    <input type="text" id="email">
+    <input type="button" value="Validate" onclick="validate()">
     <script>
         function validate(){
             var email = document.getElementById("email").value;
             var flag = 0;
             for(var i=0;i<email.length;i++){
-                if(email[i]=='@' && email[email.length-4]=='.'){
-                    flag = 1;
-                    break;
+                if(email[i]=='@'){
+                    if(email[email.length-4]=='.' || email[email.length-3]=='.'){
+                        flag = 1;
+                        break;
+                    }
+                    else{
+                        flag = 0;
+                        break;
+                    }
                 }
             }
             if(flag==1){
