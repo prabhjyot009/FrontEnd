@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body id="bdy">
+    <input type="button" value="Bg-color" onclick="bg_color()">
+    <input type="button" value="Bg-image" onclick="bg_img()">
+</body>
+<script>
+    function bg_color(){
+       var id=document.getElementById("bdy");
+       id.style.backgroundImage="";
+       id.style.backgroundColor="purple";
+    }
+    function bg_img(){
+        var id=document.getElementById("bdy");
+        id.style.backgroundImage="url('skull.jpg')";
+    }
+ </script>
+</html>

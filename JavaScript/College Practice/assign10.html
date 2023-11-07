@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addition</title>
 </head>
 <body>
-    <input type="number" id="a" placeholder="Enter first number"> +
-    <input type="number" id="b" placeholder="Enter second number"> =
-    <input type="text" id="c" placeholder="Result" onclick="add()">
-
+    <input type="number" id="a" placeholder="enter first number"> +
+    <input type="number" id="b" placeholder="enter second number"> =
+    <input type="text" id="c"  onclick="add()" placeholder="result">
     <script>
         function add() {
-            var a=document.getElementById("a").value;
-            var b=document.getElementById("b").value;
-            var c=parseInt(a)+parseInt(b);
-            document.getElementById("c").value=c;
+            var n1=document.getElementById("a").value;
+            var n2=document.getElementById("b").value;
+            var result=parseInt(n1)+parseInt(n2);
+            document.getElementById("c").value=result;
         }
     </script>
 </body>

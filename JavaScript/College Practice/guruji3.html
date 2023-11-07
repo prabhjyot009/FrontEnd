@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<script>
+    function Select(){
+        var value=document.getElementById("select").value;
+        document.getElementById("span").innerHTML=value;
+        }
+</script>
+<body>
+    Select your course:
+    <select name="" id="select" onchange="Select();">
+        <option value="">select</option>
+        <option value="Btech">Btech</option>
+        <option value="BCA">BCA</option>
+        <option value="BSC IT">BSC IT</option>
+    </select>
+
+    <p>your course is: <span id="span">  </span> </p>
+</body>
+</html>
