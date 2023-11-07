@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p id="para2">This is a paragraph</p>
+        <button onclick="change2()">Change Color</button>
+        <script>
+            function change2(){
+                var a=document.getElementById("para2");
+                var b=["red","blue","green","yellow","pink","orange","purple","brown","black","white"];
+                var c=Math.floor(Math.random()*10);
+                a.style.color=b[c];
+            }
+        </script>
+        
+</body>
+</html>
