@@ -4,24 +4,13 @@
         <title>CopyText</title>
     </head>
     <body>
-        <form>
-            <table>
-                <tr>
-                    <td>Enter Text:</td>
-                    <td><input type="text" id="t1"></td>
-                </tr>
-                <tr>
-                    <td>Copy Text:</td>
-                    <td><input type="text" id="t2"></td>
-                </tr>
-                <tr>
-                    <td><input type="button" value="Copy" onclick="copy()"></td>
-                </tr>
-            </table>
-        </form>
+        <form> <table>
+                <tr><td>Enter Text:</td><td><input type="text" id="t1"></td></tr>
+                <tr><td>Copy Text:</td><td><input type="text" id="t2"></td></tr>
+                <tr><td><input type="button" value="Copy" onclick="copy()"></td></tr>
+            </table> </form>
         <script>
-            function copy()
-            {
+            function copy(){
                 var a=document.getElementById("t1").value;
                 document.getElementById("t2").value=a;
             }

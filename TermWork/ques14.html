@@ -1,43 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeOrNot</title>
 </head>
 <body>
     <script>            
-            function prime()
-            {
+            function prime(){
                 var a=document.getElementById("t1").value;
                 var flag=0;
-                for(var i=2;i<a;i++)
-                {
-                    if(a%i==0)
-                    {
+                for(var i=2;i<a;i++){
+                    if(a%i==0){
                         flag=1;
                         break;
-                    }
-                }
-                if(flag==0)
-                {
-                    alert("Prime");
-                }
-                else
-                {
-                    alert("Not Prime");
-                }
+                    }}
+                if(flag==0){ alert("Prime");}
+                else{alert("Not Prime");}
             }
     </script>
-    <form>
-        <table>
-            <tr>
-                <td>Enter Number:</td>
-                <td><input type="text" id="t1"></td>
-            </tr>
-            <tr>
-                <td><input type="button" value="Check" onclick="prime()"></td>
-            </tr>
-        </table>
+    <form> <table>
+            <tr><td>Enter Number:</td><td><input type="text" id="t1"></td></tr>
+            <tr><td><input type="button" value="Check" onclick="prime()"></td></tr>
+        </table> </form>
 </body>
 </html>
