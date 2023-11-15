@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>John Doe</name>
+        <course>Computer Science</course>
+        <rollNumber>101</rollNumber>
+        <dob>1999-01-01</dob>
+        <mobileNumber>1234567890</mobileNumber>
+    </student>
+    <student>
+        <name>Jane Doe</name>
+        <course>Information Technology</course>
+        <rollNumber>102</rollNumber>
+        <dob>1999-02-02</dob>
+        <mobileNumber>0987654321</mobileNumber>
+    </student>
+    <student>
+        <name>Bob Smith</name>
+        <course>Mathematics</course>
+        <rollNumber>103</rollNumber>
+        <dob>1998-03-03</dob>
+        <mobileNumber>1122334455</mobileNumber>
+    </student>
+    <student>
+        <name>Alice Johnson</name>
+        <course>Physics</course>
+        <rollNumber>104</rollNumber>
+        <dob>1997-04-04</dob>
+        <mobileNumber>5566778899</mobileNumber>
+    </student>
+</students>
