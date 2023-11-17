@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <name>MK Doe</name>
+        <course>Computer Science</course>
+        <rollNumber>21</rollNumber>
+        <dob>1999-01-01</dob>
+        <mobileNumber>1234167890</mobileNumber>
+    </student>
+    <student>
+        <name>Aakash Doe</name>
+        <course>Information Technology</course>
+        <rollNumber>01</rollNumber>
+        <dob>1999-02-02</dob>
+        <mobileNumber>0981654321</mobileNumber>
+    </student>
+    <student>
+        <name>Sam Smith</name>
+        <course>Mathematics</course>
+        <rollNumber>34</rollNumber>
+        <dob>1998-03-03</dob>
+        <mobileNumber>1122334455</mobileNumber>
+    </student>
+    <student>
+        <name>Singh Johnson</name>
+        <course>AI</course>
+        <rollNumber>26</rollNumber>
+        <dob>1997-04-04</dob>
+        <mobileNumber>5566778899</mobileNumber>
+    </student>
+</students>
