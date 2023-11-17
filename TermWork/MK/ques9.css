@@ -1,0 +1,9 @@
+.display-block {
+    display: block;
+    background-color: rgb(221, 230, 173);
+}
+
+.display-inline {
+    display: inline;
+    background-color: rgb(197, 144, 238);
+}
