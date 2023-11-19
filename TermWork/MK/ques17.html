@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image </title>
+</head>
+<body>
+    <script>            
+            function change(){
+                var a=document.getElementById("i1").width;
+                var b=document.getElementById("i1").height;
+                for(var i=0;i<10;i++){
+                    document.getElementById("i1").width=a+i;
+                    document.getElementById("i1").height=b+i;
+                }}
+    </script>
+    <form> <table>
+            <tr><td><img src="skrillex.png" height="100px" width="100px" id="i1"></td></tr>
+            <tr><td><input type="button" value="Change" onclick="change()"></td></tr>
+        </table> </form>
+</body>
+</html>

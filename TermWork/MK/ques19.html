@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>EqualOrNot</title>
+</head>
+<style type="text/css">
+    .form1{
+        display: inline-block;
+        float: left;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    .submitFinal{
+        display: inline-block;
+        margin-left: 100px;
+    }
+    .form2{
+        display: inline-block;
+        margin-left: 100px;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    .container{
+        width: 840px;
+        height: 300px;
+        padding: 20px;
+        margin: auto;    
+        margin-top: 150px;
+    }
+
+</style>
+<body>
+    <form name="form1" onsubmit="return validate()">
+        <div class="container">
+            <h1>Validation Form</h1>
+            <div class="form1">
+                <h3>Form 1</h3>
+                <table>
+                    <tr><td>Username:</td><td><input type="text" name="username" id="username"></td></tr>
+                    <tr><td>Password:</td><td><input type="password" name="password" id="password"></td></tr>
+                    <tr><td>Email:</td><td><input type="email" name="email" id="email"></td></tr>
+                    <tr><td>Address:</td><td><input type="text" name="address" id="address"></td></tr>
+                    <tr><td>Phone:</td><td><input type="tel" name="phone" id="phone"></td></tr>
+                </table>
+            </div>
+            <div class="submitFinal">
+                <tr><td><input type="submit" name="submit" value="Login"></td></tr>
+            </div>
+            <div class="form2">
+                <h3>Form 2</h3>
+                <table>
+                    <tr><td>Username:</td><td><input type="text" name="username1" id="username1"></td></tr>
+                    <tr><td>Password:</td><td><input type="password" name="password1" id="password1"></td></tr>
+                    <tr><td>Email:</td><td><input type="email" name="email1" id="email1"></td></tr>
+                    <tr><td>Address:</td><td><input type="text" name="address1" id="address1"></td></tr>
+                    <tr><td>Phone:</td><td><input type="tel" name="phone1" id="phone1"></td></tr>
+                </table>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        function validate(){
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            var phone = document.getElementById('phone').value;
+            var username1 = document.getElementById('username1').value;
+            var password1 = document.getElementById('password1').value;
+            var email1 = document.getElementById('email1').value;
+            var address1 = document.getElementById('address1').value;
+            var phone1 = document.getElementById('phone1').value;
+            if(username == "" || password == "" || email == "" || address == "" || phone == "" || username1 == "" || password1 == "" || email1 == "" || address1 == "" || phone1 == ""){
+                alert("Please fill all the fields");
+                return false;
+            }
+            else{
+            if(username == username1 && password == password1 && email == email1 && address == address1 && phone == phone1){
+                alert("Form 1 and Form 2 are equal");
+                return false;
+            }
+            else{
+                alert("Form 1 and Form 2 are not equal");
+                return false;
+            }
+        }
+    }
+    </script>
+</body>
+</html>
