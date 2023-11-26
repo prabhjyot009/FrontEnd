@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of numbers in an array</title>
+</head>
+<body>
+    <script>
+        var size = prompt("Enter the size of array: ");
+        var arr = [];
+        var sum = 0;
+        for(var i=0;i<size;i++){
+            arr[i] = prompt("Enter the element: ");
+            sum = sum + parseInt(arr[i]);
+        }
+        document.write("Sum of numbers in an array is: "+sum);
+    </script>
+</body>
+</html>

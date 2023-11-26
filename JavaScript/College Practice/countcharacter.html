@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Count character</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="str" id="str" onchange="countChar()">
+    </form>
+    <script>
+        function countChar(){
+            var str = document.getElementById("str").value;
+            var count = 0;
+            for(var i=0;i<str.length;i++){
+                if(str[i] != " "){
+                    count++;
+                }
+            }
+            alert("Number of characters in a string is: "+count);
+        }
+    </script>
+</body>
+</html>
