@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Display Current Path</title>
+</head>
+<body>
+    <button onclick="showPath()">Show Path</button>
+    <p id="path"></p>
+    <script>
+        function showPath(){
+            var path = window.location.href;
+            document.getElementById("path").innerHTML = path;
+        }
+    </script>
+</body>
+</html>
