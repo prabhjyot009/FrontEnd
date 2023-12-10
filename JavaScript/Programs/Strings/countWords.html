@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Count words</title>
+    </head>
+    <body>
+        <input type="text" id="c" name="c">
+        <button onclick="countWords()">Count words</button>
+        <p id="p"></p>
+        </body>
+        <script>
+            function countWords() {
+                var c = document.getElementById("c").value;
+                var p = document.getElementById("p");
+                var words = c.split(" ");
+                p.innerHTML = words.length;
+            }
+        </script>
+</html>
